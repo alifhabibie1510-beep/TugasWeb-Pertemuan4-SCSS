@@ -1,0 +1,28 @@
+// LAYOUT / GRID: kerangka utama halaman (CSS Grid)
+@use '../abstracts' as *;
+
+.layout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: $sidebar-width 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    'header  header'
+    'sidebar content'
+    'footer  footer';
+  gap: $space-md;
+  padding: $space-md;
+  max-width: $layout-max-width;
+  margin-inline: auto;
+
+  // Layar kecil: satu kolom
+  @include respond-to(md) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'header'
+      'sidebar'
+      'content'
+      'footer';
+    padding: $space-sm;
+  }
+}

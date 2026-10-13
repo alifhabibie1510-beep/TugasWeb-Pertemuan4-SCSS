@@ -1,0 +1,13 @@
+{
+  "name": "tugasweb-pertemuan4-scss",
+  "version": "1.0.0",
+  "description": "Tugas Rutin 4 - Konversi CSS ke SCSS (7-1 pattern)",
+  "private": true,
+  "scripts": {
+    "watch": "sass --watch --no-source-map src/scss/main.scss:css/style.css",
+    "build": "sass --no-source-map --style=expanded src/scss/main.scss css/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.105.1"
+  }
+}

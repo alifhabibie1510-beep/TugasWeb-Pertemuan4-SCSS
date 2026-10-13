@@ -1,0 +1,19 @@
+// LAYOUT / HEADER
+@use '../abstracts' as *;
+
+.site-header {
+  grid-area: header;
+  @include flex($wrap: wrap, $justify: space-between, $align: center, $gap: $space-sm $space-md);
+  @include surface;
+  padding: $space-md;
+
+  &__title {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    margin-bottom: 0;
+  }
+
+  &__subtitle {
+    margin: 0;
+    color: color(muted);
+  }
+}

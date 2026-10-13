@@ -1,0 +1,30 @@
+// BASE / TYPOGRAPHY
+@use '../abstracts' as *;
+
+body {
+  background-color: color(bg);
+  color: color(text);
+  font-family: $font-base;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 $space-sm;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0 0 $space-sm;
+}
+
+a {
+  color: color(primary);
+}
+
+:focus-visible {
+  outline: 3px solid color(primary);
+  outline-offset: 3px;
+}

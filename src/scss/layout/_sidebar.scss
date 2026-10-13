@@ -1,0 +1,58 @@
+// LAYOUT / SIDEBAR
+@use '../abstracts' as *;
+
+.sidebar {
+  grid-area: sidebar;
+  align-self: start;
+  @include flex($direction: column, $gap: $space-sm);
+  @include surface;
+  padding: $space-md;
+
+  &__avatar {
+    @include flex($justify: center, $align: center);
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background-color: color(primary);
+    color: color(primary-contrast);
+    font-size: 2rem;
+    font-weight: 800;
+    border: 4px solid color(accent);
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+  }
+
+  &__text {
+    color: color(muted);
+    margin-bottom: 0;
+  }
+
+  &__facts {
+    @include flex($direction: column, $gap: $space-xs);
+    margin: 0;
+  }
+
+  &__fact {
+    @include flex($justify: space-between, $gap: $space-sm);
+    padding-bottom: $space-xs;
+    border-bottom: 1px solid color(border);
+  }
+
+  &__label {
+    color: color(muted);
+  }
+
+  &__value {
+    margin: 0;
+    font-weight: 600;
+    text-align: right;
+  }
+
+  &__subtitle {
+    font-size: 1rem;
+    margin: $space-sm 0 0;
+  }
+}

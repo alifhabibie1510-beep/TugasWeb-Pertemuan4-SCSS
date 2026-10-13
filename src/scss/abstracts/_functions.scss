@@ -1,0 +1,15 @@
+// =====================================================
+// ABSTRACTS / FUNCTIONS
+// =====================================================
+@use 'sass:map';
+@use 'variables' as *;
+
+// color(primary)  ->  var(--color-primary)
+// Pakai CSS custom property agar dark mode bisa berganti otomatis,
+// tapi nama warnanya divalidasi dulu oleh Sass saat compile.
+@function color($name) {
+  @if not map.has-key($colors-light, $name) {
+    @error "Warna '#{$name}' tidak ada di $colors-light.";
+  }
+  @return var(--color-#{$name});
+}

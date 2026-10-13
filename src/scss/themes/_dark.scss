@@ -1,0 +1,8 @@
+// THEMES / DARK: bonus dark mode (mengikuti pengaturan perangkat)
+@use '../abstracts' as *;
+
+@include dark-mode {
+  :root {
+    @include color-tokens($colors-dark);
+  }
+}

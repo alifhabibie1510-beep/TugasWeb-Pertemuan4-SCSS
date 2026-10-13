@@ -1,0 +1,24 @@
+// COMPONENTS / STATS
+@use '../abstracts' as *;
+
+.stats {
+  @include flex($wrap: wrap, $gap: $space-md);
+
+  &__item {
+    flex: 1 1 160px;
+    @include flex($direction: column);
+    @include surface;
+    padding: $space-md;
+  }
+
+  &__number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1;
+    color: color(primary);
+  }
+
+  &__label {
+    color: color(muted);
+  }
+}

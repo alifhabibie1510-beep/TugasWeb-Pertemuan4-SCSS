@@ -1,0 +1,19 @@
+// COMPONENTS / NAV
+@use '../abstracts' as *;
+
+.site-nav {
+  &__list {
+    @include flex($wrap: wrap, $gap: $space-xs);
+  }
+
+  &__link {
+    display: block;
+    padding: $space-xs 1rem;
+    border-radius: $radius-pill;
+    color: color(text);
+    text-decoration: none;
+    font-weight: 600;
+
+    @include hover-fill;
+  }
+}

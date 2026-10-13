@@ -1,0 +1,17 @@
+// LAYOUT / CONTENT (area <main>)
+@use '../abstracts' as *;
+
+.content {
+  grid-area: content;
+  @include flex($direction: column, $gap: $space-lg);
+  min-width: 0;
+
+  &__section {
+    scroll-margin-top: $space-md;
+  }
+
+  &__title {
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+    margin-bottom: $space-md;
+  }
+}

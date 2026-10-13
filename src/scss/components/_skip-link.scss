@@ -1,0 +1,17 @@
+// COMPONENTS / SKIP LINK (aksesibilitas)
+@use '../abstracts' as *;
+
+.skip-link {
+  position: absolute;
+  top: -4rem;
+  left: 1rem;
+  padding: $space-xs 1rem;
+  background-color: color(text);
+  color: color(bg);
+  border-radius: $radius-sm;
+  z-index: 10;
+
+  &:focus {
+    top: 1rem;
+  }
+}

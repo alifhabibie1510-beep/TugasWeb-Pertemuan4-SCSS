@@ -1,0 +1,54 @@
+// =====================================================
+// ABSTRACTS / VARIABLES
+// Semua nilai desain disimpan di sini (satu sumber kebenaran).
+// =====================================================
+
+// ----- Warna (map): mode terang -----
+$colors-light: (
+  'bg':               #f4f6fb,
+  'surface':          #ffffff,
+  'text':             #101828,
+  'muted':            #475467,
+  'primary':          #2b4eff,
+  'primary-contrast': #ffffff,
+  'accent':           #ffe45e,
+  'border':           #d5dbe5,
+);
+
+// ----- Warna (map): mode gelap -----
+$colors-dark: (
+  'bg':               #0b1020,
+  'surface':          #151c33,
+  'text':             #eef1f8,
+  'muted':            #a9b3c9,
+  'primary':          #8aa2ff,
+  'primary-contrast': #0b1020,
+  'accent':           #ffe45e,
+  'border':           #2a3454,
+);
+
+// Warna tetap (tidak ikut berubah saat dark mode)
+$color-ink: #101828;
+
+// ----- Tipografi -----
+$font-base: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+
+// ----- Spacing -----
+$space-xs: 0.5rem;
+$space-sm: 0.75rem;
+$space-md: 1.5rem;
+$space-lg: 2.5rem;
+
+// ----- Radius -----
+$radius-sm:   6px;
+$radius-md:   12px;
+$radius-pill: 999px;
+
+// ----- Ukuran layout -----
+$sidebar-width:    290px;
+$layout-max-width: 1280px;
+
+// ----- Breakpoint (dipakai mixin respond-to) -----
+$breakpoints: (
+  'md': 800px,
+);

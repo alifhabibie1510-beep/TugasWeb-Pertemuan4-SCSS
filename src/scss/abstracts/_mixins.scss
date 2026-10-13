@@ -1,0 +1,56 @@
+// =====================================================
+// ABSTRACTS / MIXINS (reusable)
+// =====================================================
+@use 'sass:map';
+@use 'variables' as *;
+@use 'functions' as *;
+
+// 1) Flex container: nilai null otomatis tidak ditulis ke CSS
+@mixin flex($direction: null, $wrap: null, $justify: null, $align: null, $gap: null) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+// 2) Permukaan kartu: background + border + radius
+@mixin surface($radius: $radius-md) {
+  background-color: color(surface);
+  border: 1px solid color(border);
+  border-radius: $radius;
+}
+
+// 3) Media query responsif berdasarkan nama breakpoint
+@mixin respond-to($name) {
+  $width: map.get($breakpoints, $name);
+  @if $width == null {
+    @error "Breakpoint '#{$name}' tidak ditemukan di $breakpoints.";
+  }
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+// 4) Dark mode mengikuti pengaturan perangkat
+@mixin dark-mode {
+  @media (prefers-color-scheme: dark) {
+    @content;
+  }
+}
+
+// 5) Efek hover: isi warna primary
+@mixin hover-fill {
+  &:hover {
+    background-color: color(primary);
+    color: color(primary-contrast);
+  }
+}
+
+// 6) Mengubah map warna menjadi CSS custom property (memakai @each)
+@mixin color-tokens($map) {
+  @each $name, $value in $map {
+    --color-#{$name}: #{$value};
+  }
+}

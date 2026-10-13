@@ -1,0 +1,11 @@
+// =====================================================
+// TUGAS RUTIN 4: Konversi CSS ke SCSS (7-1 pattern)
+// File ini hanya "pintu masuk": semua partial dimuat dengan @use.
+// Urutan penting: token tema dulu, lalu base, layout, components, pages.
+// =====================================================
+@use 'vendors';
+@use 'themes';
+@use 'base';
+@use 'layout';
+@use 'components';
+@use 'pages';

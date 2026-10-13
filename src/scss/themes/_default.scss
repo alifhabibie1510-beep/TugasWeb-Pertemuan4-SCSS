@@ -1,0 +1,6 @@
+// THEMES / DEFAULT: token warna mode terang
+@use '../abstracts' as *;
+
+:root {
+  @include color-tokens($colors-light);
+}

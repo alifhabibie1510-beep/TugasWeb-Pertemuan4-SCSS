@@ -1,0 +1,25 @@
+// COMPONENTS / CARD
+@use '../abstracts' as *;
+
+.card {
+  @include surface;
+  padding: $space-md;
+
+  &--highlight {
+    border-left: 5px solid color(primary);
+  }
+
+  &__title {
+    font-size: 1.2rem;
+  }
+
+  &__text {
+    color: color(muted);
+  }
+
+  &__meta {
+    margin: 0;
+    font-size: 0.9rem;
+    color: color(muted);
+  }
+}

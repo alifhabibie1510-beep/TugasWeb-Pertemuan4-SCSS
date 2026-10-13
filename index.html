@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Muhammad Alif Habibie | Konversi CSS ke SCSS</title>
+  <meta name="description" content="Portofolio Muhammad Alif Habibie, mahasiswa Ilmu Komputer UNIMED. Tugas Rutin 4 Pemrograman Web: konversi CSS ke SCSS dengan struktur 7-1 pattern.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#konten-utama">Lompat ke konten utama</a>
+
+  <div class="layout">
+
+    <!-- ============ HEADER + NAV ============ -->
+    <header class="site-header">
+      <div class="site-header__brand">
+        <h1 class="site-header__title">Muhammad Alif Habibie</h1>
+        <p class="site-header__subtitle">Portofolio mahasiswa Ilmu Komputer</p>
+      </div>
+
+      <nav class="site-nav" aria-label="Navigasi utama">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="#tentang">Tentang</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="#ringkasan">Ringkasan</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="#proyek">Proyek</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ============ ASIDE (SIDEBAR PROFIL) ============ -->
+    <aside class="sidebar" aria-labelledby="judul-profil">
+      <div class="sidebar__avatar" aria-hidden="true">AH</div>
+      <h2 class="sidebar__title" id="judul-profil">Profil singkat</h2>
+      <p class="sidebar__text">Mahasiswa Universitas Negeri Medan yang sedang belajar membangun website dari nol.</p>
+
+      <dl class="sidebar__facts">
+        <div class="sidebar__fact">
+          <dt class="sidebar__label">Kampus</dt>
+          <dd class="sidebar__value">UNIMED</dd>
+        </div>
+        <div class="sidebar__fact">
+          <dt class="sidebar__label">Prodi</dt>
+          <dd class="sidebar__value">Ilmu Komputer</dd>
+        </div>
+        <div class="sidebar__fact">
+          <dt class="sidebar__label">Kota</dt>
+          <dd class="sidebar__value">Medan</dd>
+        </div>
+      </dl>
+
+      <h3 class="sidebar__subtitle">Teknologi</h3>
+      <ul class="tag-list">
+        <li class="tag-list__item">HTML5</li>
+        <li class="tag-list__item">CSS3</li>
+        <li class="tag-list__item">Grid</li>
+        <li class="tag-list__item">Flexbox</li>
+        <li class="tag-list__item">Git</li>
+      </ul>
+    </aside>
+
+    <!-- ============ MAIN ============ -->
+    <main class="content" id="konten-utama">
+
+      <section class="content__section" id="tentang" aria-labelledby="judul-tentang">
+        <h2 class="content__title" id="judul-tentang">Tentang saya</h2>
+        <article class="card">
+          <h3 class="card__title">Halo, selamat datang</h3>
+          <p class="card__text">Saya sedang belajar menyusun tata letak halaman web dengan CSS Grid dan Flexbox. Halaman ini adalah pengembangan dari landing page di Tugas Rutin 1, dengan struktur yang lebih rapi dan mendukung tampilan terang maupun gelap.</p>
+          <p class="card__text">Target saya semester ini adalah menguasai dasar HTML5, CSS, dan cara membagikan proyek lewat GitHub.</p>
+        </article>
+      </section>
+
+      <section class="content__section" id="ringkasan" aria-labelledby="judul-ringkasan">
+        <h2 class="content__title" id="judul-ringkasan">Ringkasan belajar</h2>
+        <ul class="stats">
+          <li class="stats__item">
+            <span class="stats__number">2</span>
+            <span class="stats__label">Tugas rutin dikerjakan</span>
+          </li>
+          <li class="stats__item">
+            <span class="stats__number">9</span>
+            <span class="stats__label">Total tugas rutin</span>
+          </li>
+          <li class="stats__item">
+            <span class="stats__number">5</span>
+            <span class="stats__label">Teknologi dipelajari</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="content__section" id="proyek" aria-labelledby="judul-proyek">
+        <h2 class="content__title" id="judul-proyek">Proyek</h2>
+        <div class="projects">
+          <article class="card card--highlight">
+            <h3 class="card__title">Landing page pribadi</h3>
+            <p class="card__text">Tugas Rutin 1. HTML5 semantik, formulir bervalidasi, dan meta tag SEO.</p>
+            <p class="card__meta">Selesai: <time datetime="2026-10">Oktober 2026</time></p>
+          </article>
+          <article class="card card--highlight">
+            <h3 class="card__title">CSS Layouting portofolio</h3>
+            <p class="card__text">Tugas Rutin 2. Halaman ini, dengan Grid untuk struktur utama dan Flexbox untuk komponen.</p>
+            <p class="card__meta">Selesai: <time datetime="2026-10">Oktober 2026</time></p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Tugas Rutin 3</h3>
+            <p class="card__text">Ruang untuk tugas berikutnya.</p>
+            <p class="card__meta">Status: belum dimulai</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content__section" id="kontak" aria-labelledby="judul-kontak">
+        <h2 class="content__title" id="judul-kontak">Kontak</h2>
+        <ul class="contact">
+          <li class="contact__item"><a class="contact__link" href="https://mail.google.com/mail/?view=cm&amp;to=alifhabibie1510@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></li>
+          <li class="contact__item"><a class="contact__link" href="https://github.com/alifhabibie1510-beep">GitHub</a></li>
+          <li class="contact__item"><a class="contact__link" href="https://www.instagram.com/h.bieee999?utm_source=ig_web_button_share_sheet&amp;xtok=ZDNlZDc0MzIxNw==">Instagram</a></li>
+        </ul>
+        <p class="contact-note">Atau kirim langsung ke alifhabibie1510@gmail.com</p>
+      </section>
+
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+      <p class="site-footer__text">&copy; 2026 Muhammad Alif Habibie. Tugas Rutin 4, Pemrograman Web, UNIMED.</p>
+      <p class="site-footer__text"><a class="site-footer__link" href="#konten-utama">Kembali ke atas</a></p>
+    </footer>
+
+  </div>
+
+</body>
+</html>

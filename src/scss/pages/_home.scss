@@ -1,0 +1,14 @@
+// PAGES / HOME: gaya khusus halaman portofolio
+@use '../abstracts' as *;
+
+// Grid bersarang untuk daftar proyek
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: $space-md;
+}
+
+.contact-note {
+  margin: $space-sm 0 0;
+  color: color(muted);
+}
